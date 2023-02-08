@@ -1,0 +1,67 @@
+<section class="about_section layout_padding">
+    <div class="container  ">
+  
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="img/about-img.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+        
+            <p style="color:white">
+              Là où les hindous voient une vache sacrée, d'autres voient un gros hamburger.
+              Parfois, je suis triste pour les mannequins qui ne mangent pas. 
+              Lorsque vous aimez la nourriture, vous aimez la vie. 
+              Lorsque vous aimez la vie, vous aimez aimer.
+            </p>
+            <a href="#menuboisson">
+              Voir Plus
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><br><br> <br>
+
+
+  <section>
+    <div class="content-intro bg-white p-t-77 p-b-133" id="menuburger">
+      <div class="container">
+      
+      
+          <div class="col-md-4 p-t-30">
+         
+            <div class="blo1">
+              <div class="imagemenu">
+                <img src="" style="width: 500px;margin-left:-20px;" >
+              </div>
+
+              <div class="wrap-text-blo1 p-t-35" style="margin-left: 700px;width: 400px;margin-top:-340px">
+                <a href="#burgers"><h4 class="txt5 color0-hov trans-0-4 m-b-13" id="titre">
+                  <span th:text="${burgers.nom}"></span> 
+                </h4></a>
+
+                <p class="prix">
+                  <span th:text="${burgers.prix}">Fcfa</span>
+                </p>
+                
+               
+                    <div class="contenu1">
+                    
+                      <span th:text="${burgers.description}"></span>                                  
+                  </div>
+              
+                  <div class="imagemenu" >
+                    <img th:src="@{${'img/'+burgers.image}}" style="  width: 250px;" >
+                  </div>
+              
+              </div>
+            </div>
+          </div>
+      
+      
+      </div>
+    </div>
+    </section><br><br><br><br><br>

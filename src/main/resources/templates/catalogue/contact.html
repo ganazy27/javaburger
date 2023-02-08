@@ -1,0 +1,24 @@
+
+
+   {#  <div>
+      <div class="form-floating mb-3 " th:each="b : ${burgers}">
+        <label for="floatingInput"  th:text="${b.nom}"></label><br/><br/>
+        <input type="checkbox" name="burgers" th:field="*{burgers}" id="" th:value="${b.id}"><br/><br/>
+        <label for="">quantite</label><br/><br/>
+        <input type="text" th:field="*{quantiteBurger}">
+      </div>
+      <div class="form-floating mb-3 " th:each="f : ${frittes}">
+        <label for="floatingInput"  th:text="${f.nom}"></label><br/><br/>
+        <input type="checkbox" name="frittes" th:field="*{frittes}" id="" th:value="${f.id}"><br/><br/>
+        <label for="">quantite</label><br/><br/>
+        <input type="text" th:field="*{quantiteFritte}">
+      </div>
+      <div class="form-floating mb-3 " th:each="t : ${tailles}">
+        <label for="floatingInput"  th:text="${t.nom}"></label>
+        <input type="checkbox" name="tailles" th:field="*{tailles}" id="" th:value="${t.id}"><br/><br/>
+      </div>
+        <label for="">quantite</label><br/><br/>
+        <input type="text" th:field="*{quantiteTaille}"> 
+          </div>#}
+      
+      
